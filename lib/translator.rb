@@ -14,7 +14,11 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   hash = load_library(file)
-  
+  hash.each do |name, emoticons|
+    if emoticons[1] == emoticon
+      return name
+    end
+  end
 end
 
 def get_english_meaning
