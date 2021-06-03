@@ -1,7 +1,11 @@
 # require modules here
+require 'yaml'
+require 'pry'
 
-def load_library
-  # code goes here
+def load_library(file)
+  emoticons_hash = YAML.load(File.read(file))
+  emoticons_hash
+  binding.pry
 end
 
 def get_japanese_emoticon
