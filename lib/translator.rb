@@ -9,6 +9,7 @@ def load_library(file)
     final_hash[name][:english] = emoticons[0]
     final_hash[name][:japanese] = emoticons[1]
   end
+  emoticons_hash
 end
 
 def get_japanese_emoticon
