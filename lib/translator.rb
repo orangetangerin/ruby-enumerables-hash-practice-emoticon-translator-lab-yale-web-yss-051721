@@ -3,8 +3,8 @@ require 'yaml'
 require 'pry'
 
 def load_library(file)
-  YAML.load(File.read(file))
-  binding.pry
+  hash_of_arrays = YAML.load(File.read(file))
+  emoticons_hash = 
 end
 
 def get_japanese_emoticon
